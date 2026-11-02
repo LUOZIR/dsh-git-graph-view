@@ -1,0 +1,9 @@
+# dsh-git-graph-view bundle patch — 把本插件行插入 profile 的插件清单。
+#
+# host 半体（package.json 的 exports["."]）跑在宿主进程：注册 /git-graph-view
+# 前缀路由，用只读 git 命令取仓库状态、提交图与提交详情。
+# package.json 的 dsh.client 声明让浏览器半体（exports["./client"]）在 Web GUI
+# 里经 client-modules 加载，并注册 conversation.view 的「Git 图谱」标签页。
+- insert:
+    - id: dsh-git-graph-view
+      name: 'dsh-git-graph-view'

@@ -1,0 +1,21 @@
+{
+    "gitVersion":  "git version 2.36.1.windows.1",
+    "shas":  {
+                 "root":  "b21348cee2e02f34a8d7b01ecbfbecd000f393d6",
+                 "normal":  "e1325ae3dc924704aa6d35916bfb8dcd688f7e3e",
+                 "feature":  "914c4cc053d0267c95fecc475d2ebf5b4bb55538",
+                 "merge":  "e672f28c8dce8f524dedebb7318f481a6ef6fddc"
+             },
+    "toplevel":  "C:/work/dsh-git-graph-view-demo",
+    "status":  "# branch.oid e672f28c8dce8f524dedebb7318f481a6ef6fddc\n# branch.head main",
+    "graphLog":  "e672f28c8dce8f524dedebb7318f481a6ef6fddc\u0000e1325ae3dc924704aa6d35916bfb8dcd688f7e3e 914c4cc053d0267c95fecc475d2ebf5b4bb55538\u0000Fixture 张三\u0000fixture@example.com\u00001767571200\u0000HEAD -\u003e refs/heads/main\u0000merge: 合并 feature 分支\u001e\n914c4cc053d0267c95fecc475d2ebf5b4bb55538\u0000e1325ae3dc924704aa6d35916bfb8dcd688f7e3e\u0000Fixture 张三\u0000fixture@example.com\u00001767398400\u0000refs/heads/feature\u0000feat: feature 分支新增 c.txt\u001e\ne1325ae3dc924704aa6d35916bfb8dcd688f7e3e\u0000b21348cee2e02f34a8d7b01ecbfbecd000f393d6\u0000Fixture 张三\u0000fixture@example.com\u00001767312000\u0000\u0000feat: 修改 a.txt 并新增中文文件\u001e\nb21348cee2e02f34a8d7b01ecbfbecd000f393d6\u0000\u0000Fixture 张三\u0000fixture@example.com\u00001767225600\u0000\u0000chore: 初始提交\u001e",
+    "showRoot":  "b21348cee2e02f34a8d7b01ecbfbecd000f393d6\u0000\u0000Fixture 张三\u0000fixture@example.com\u00002026-01-01T00:00:00+00:00\u00002026-01-01T00:00:00+00:00\u0000\u0000chore: 初始提交\n",
+    "showNormal":  "e1325ae3dc924704aa6d35916bfb8dcd688f7e3e\u0000b21348cee2e02f34a8d7b01ecbfbecd000f393d6\u0000Fixture 张三\u0000fixture@example.com\u00002026-01-02T00:00:00+00:00\u00002026-01-02T00:00:00+00:00\u0000\u0000feat: 修改 a.txt 并新增中文文件\n",
+    "showMerge":  "e672f28c8dce8f524dedebb7318f481a6ef6fddc\u0000e1325ae3dc924704aa6d35916bfb8dcd688f7e3e 914c4cc053d0267c95fecc475d2ebf5b4bb55538\u0000Fixture 张三\u0000fixture@example.com\u00002026-01-05T00:00:00+00:00\u00002026-01-05T00:00:00+00:00\u0000HEAD -\u003e refs/heads/main\u0000merge: 合并 feature 分支\n",
+    "diffRootName":  "A\tREADME.md\nA\ta.txt",
+    "diffRootNum":  "1\t0\tREADME.md\n2\t0\ta.txt",
+    "diffNormalName":  "M\ta.txt\nA\t中文 文件.md",
+    "diffNormalNum":  "2\t1\ta.txt\n2\t0\t中文 文件.md",
+    "diffMergeName":  "A\tc.txt",
+    "diffMergeNum":  "1\t0\tc.txt"
+}

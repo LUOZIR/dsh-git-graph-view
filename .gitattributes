@@ -1,0 +1,5 @@
+# 统一 LF；二进制文件不参与文本转换
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.tgz binary

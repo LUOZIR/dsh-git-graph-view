@@ -1,0 +1,55 @@
+{
+  "name": "dsh-git-graph-view",
+  "version": "0.2.1",
+  "description": "DSH Web GUI 的 Git 图谱可视化插件：会话页新增「Git 图谱」视图，展示工作区提交 DAG、分支/标签/远程引用与提交详情（只读）。",
+  "author": "LUOZIR",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LUOZIR/dsh-git-graph-view.git"
+  },
+  "homepage": "https://github.com/LUOZIR/dsh-git-graph-view#readme",
+  "bugs": {
+    "url": "https://github.com/LUOZIR/dsh-git-graph-view/issues"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "docs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "scripts": {
+    "test": "node test/run.mjs",
+    "test:node": "node --test test/",
+    "check": "node --check lib/index.js && node --check lib/git.js && node --check lib/parse.js && node --check lib/graph.js && node --check lib/http.js && node --check lib/service.js && node --check lib/client.js",
+    "pack:local": "npm pack"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "git",
+    "git-graph",
+    "图谱"
+  ],
+  "license": "MIT"
+}
