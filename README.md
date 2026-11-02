@@ -1,5 +1,7 @@
 # dsh-git-graph-view · DSH Git 图谱可视化
 
+**最新版本**：[v0.2.1](https://github.com/LUOZIR/dsh-git-graph-view/releases/tag/v0.2.1) · [下载 tgz](https://github.com/LUOZIR/dsh-git-graph-view/releases/download/v0.2.1/dsh-git-graph-view-0.2.1.tgz) · [CHANGELOG](CHANGELOG.md)
+
 > **English summary** — A community plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web GUI:
 > adds a **Git Graph** tab to the conversation view that renders the workspace's commit DAG (lanes, branch/tag/remote refs,
 > commit details) in a read-only view. Built as a dual-face `dsh` bundle plugin (host node half + browser client half),
