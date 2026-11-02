@@ -1,5 +1,7 @@
 # dsh-git-graph-view · DSH Git 图谱可视化
 
+[![CI](https://github.com/LUOZIR/dsh-git-graph-view/actions/workflows/ci.yml/badge.svg)](https://github.com/LUOZIR/dsh-git-graph-view/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![DSH](https://img.shields.io/badge/DSH-0.2.1-4176e6)](https://github.com/deepseek-ai/deepseek-harness)
+
 **最新版本**：[v0.2.1](https://github.com/LUOZIR/dsh-git-graph-view/releases/tag/v0.2.1) · [下载 tgz](https://github.com/LUOZIR/dsh-git-graph-view/releases/download/v0.2.1/dsh-git-graph-view-0.2.1.tgz) · [CHANGELOG](CHANGELOG.md)
 
 > **English summary** — A community plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web GUI:
