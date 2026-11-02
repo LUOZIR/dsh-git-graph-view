@@ -6,6 +6,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { realpathSync } from 'node:fs'
+import { basename } from 'node:path'
 import { mount } from '../lib/index.js'
 import { isTrustedRequest, isLoopbackAddress, isLoopbackHostname } from '../lib/http.js'
 
@@ -307,7 +308,9 @@ test('workspaces：返回注册表里的工作区', async () => {
   assert.equal(json.ok, true)
   assert.deepEqual(json.value.workspaces, [
     { path: WORKSPACE, title: 'demo' },
-    { path: 'C:\\not\\real', title: 'real' },
+    // 宿主用 node:path 的 basename 兜底标题：Windows 上 'C:\\not\\real' → 'real'，
+    // POSIX 上反斜杠不是分隔符（CI 在 Linux 上跑），因此用同平台函数计算期望值。
+    { path: 'C:\\not\\real', title: basename('C:\\not\\real') },
   ])
 })
 
